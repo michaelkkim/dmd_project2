@@ -1,0 +1,30 @@
+[1] "--- WAIC ---"
+
+Computed from 30000 by 2682 log-likelihood matrix.
+
+          Estimate    SE
+elpd_waic  -7487.3  82.4
+p_waic       726.2  26.4
+waic       14974.5 164.8
+
+485 (18.1%) p_waic estimates greater than 0.4. We recommend trying loo instead. 
+
+
+--- LOO ---
+
+Computed from 30000 by 2682 log-likelihood matrix.
+
+         Estimate    SE
+elpd_loo  -7637.6  84.2
+p_loo       876.5  30.3
+looic     15275.2 168.4
+------
+MCSE of elpd_loo is NA.
+MCSE and ESS estimates assume MCMC draws (r_eff in [0.1, 2.4]).
+
+Pareto k diagnostic values:
+                         Count Pct.    Min. ESS
+(-Inf, 0.7]   (good)     2385  88.9%   190     
+   (0.7, 1]   (bad)       264   9.8%   <NA>    
+   (1, Inf)   (very bad)   33   1.2%   <NA>    
+See help('pareto-k-diagnostic') for details.
